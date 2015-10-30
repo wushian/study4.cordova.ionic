@@ -1,0 +1,16 @@
+﻿<ion-view view-title="活動內容">
+    <ion-content>
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="images/head.jpg">
+                <h2 ng-bind="event.name"></h2>
+                <span>
+                    <i class="icon ion-calendar"></i> {{  event.date | date : 'yyyy/MM/dd' }}
+                    <i class="icon ion-person-stalker"></i> {{ event.number }}
+                </span>
+            </div>
+            <div class="item item-body" ng-bind-html="event.description">
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
